@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Interactive Matching Activity</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div class="main container-fluid">
+  	<div class="row">
+      <div class="col-md-12">
+        <table class="table-responsive" id="tbl">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <button id="reset-game" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#gen">Start New Game</button>
+      </div>
+    </div>
+  </div>
+  <div class="in-play"></div>
+  <!-- Modal -->
+  <div id="gen" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h1 class="modal-title">Start New Game</h1>
+        </div>
+        <div class="modal-body">
+          Enter <b>n</b>: <input class="form-control input-lg" type="number" min="2" max="12" value="4" id="n">
+          <p id="msg">Select worksheet size and click 'Generate Worksheet'<p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal" onclick="generateWorksheet()">Generate Worksheet</button>
+          <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>  
+</body>
+</html>

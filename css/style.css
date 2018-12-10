@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Anton);
+
+/* style.css, by default saved in subfolder /css */
+
+
+body {
+	background-color: #ffe5b3 !important;
+	font-family: 'Open Sans' !important;
+	color: #bd8a29 !important;
+}
+
+table{
+	margin: auto;
+}
+
+#tbl {
+	margin-top: 200px;
+}
+
+.header-container {
+	font-size: 90px;
+	text-align: center;
+}
+
+.cell-circle {
+	height: 120px;
+	width: 120px;
+	background-color: #fff7e5;
+	border-radius: 100%;
+	margin: auto;
+	border: 10px solid #ffe5b3;
+	text-align: center;
+	position: relative;	
+}
+
+img, .sihouette {
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+.silhouette {
+	-webkit-filter: brightness(80%) drop-shadow(5px 5px 5px #222);
+	filter: brightness(80%) drop-shadow(5px 5px 5px #222);
+}
+
+img {	
+	transition:all 0.3s ease;
+}
+
+body {
+	animation: fadein 2s;
+}
+
+.selected-left, .hover-left {
+	transform: scale(1.5);
+}
+
+.selected-right, .hover-right {
+	transform: scale(1.5);
+}
+
+.selected-circle, .hover-circle {
+	border: 10px solid #e0b86c;
+}
+
+.in-play {
+	position: fixed;
+	top: 20px;
+	display: none;
+	font-size:120px;
+	font-family: 'Oswald';
+	font-style: italic;
+	font-weight: bold;
+	height:150px;
+	text-align: center;
+	z-index:3;
+	width: 100%;
+}
+
+.matched, .matched:hover {
+	background-color: #e0f99f;
+	border: 10px solid #a6cc33;
+}
+
+canvas {
+	height: 100%;
+	width: 100%;
+}
+
+#reset-game {
+	margin-top: 20px;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.modal {
+	font-size: 20px;
+}
